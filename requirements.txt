@@ -1,0 +1,6 @@
+PySide6-Essentials==6.12.0
+python-docx>=1.2,<2
+docxcompose>=2.2,<3
+qrcode[pil]>=8.2,<9
+openpyxl>=3.1,<4
+PyMuPDF==1.26.6
