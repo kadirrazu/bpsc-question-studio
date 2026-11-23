@@ -1,69 +1,70 @@
-# BPSC Question Studio — রিলিজ ইতিহাস
+# BPSC Question Studio Release History
 
-ব্যবহার ও বিল্ডের নির্দেশিকা [guides](../guides/)-এ আছে। নিচে প্রধান পরিবর্তনগুলো নতুন থেকে পুরোনো ক্রমে দেওয়া হয়েছে।
+The latest release is at the top. See the [guides](../guides/) for help using or building the app.
 
 ## v0.5.1
 
-- লগইন ইমেইল আগে থেকেই পূরণ থাকে এবং সম্পাদনা করা যায়।
-- প্রশ্নপত্র তৈরির ধাপ ও অতিবাহিত সময় দেখা যায়। LibreOffice প্রতিবার নতুন প্রোফাইলে চলে এবং টাইমআউট হলে রেন্ডারারের অবস্থানসহ বার্তা দেয়।
-- Windows পোর্টেবল অ্যাপ BPSC Question Studio নামেই চলে।
-- ফুটারের সেট কোডের পরিষ্কার নাম, রুম কোডের সাইজ, রং ও অপাসিটি এবং নতুন Center File Wizard লেআউট।
+- The sign-in form fills in the default email. You can change it before signing in.
+- A progress bar shows the current step and elapsed time while question sets are being made. LibreOffice starts with a fresh profile for each conversion batch. If it times out, the message shows the renderer path.
+- The portable app uses the BPSC Question Studio name on Windows.
+- Renamed the set footer label to **Unique Alphanumeric Code for Each Set**. Room codes now default to `{code}`, with settings for font size, color, and opacity.
+- Gave the Center File Wizard a new layout with separate panels for the source workbook, generation rules, file-name fields, and live preview.
 
 ## v0.5.0
 
-- নতুন QR-এর ডিফল্ট প্রস্থ ০.৭৫ ইঞ্চি। সংরক্ষিত প্রস্থ সেটিংস থেকে বদলানো যায়।
-- প্রশ্নপত্রের ইউনিক সেট কোডের জন্য পৃথক প্রিন্ট সুইচ, ফন্ট, সাইজ, রং ও অপাসিটি।
-- Center File Wizard লাইভ প্রিভিউসহ প্রশ্নের কপি সংখ্যা, কেন্দ্রভিত্তিক রুম সিরিয়াল, ফাইলের নাম, প্রিন্ট নির্দেশনা ও ঐচ্ছিক রুম কোড তৈরি করে। মূল Excel অক্ষত থাকে।
-- Room Print Packs-এ রুম কোডের ঐচ্ছিক লেবেল, অবস্থান ও পৃষ্ঠা বাছাই।
+- The default QR width is 0.75 inches. You can change it in settings.
+- You can turn the code in the set footer on or off and set its font, size, color, and opacity.
+- Added the Center File Wizard. It previews question counts, room numbers in sequence for each center, file names, print instructions, and optional room codes. It saves the new columns in a copy of the workbook.
+- Room Print Packs can print room codes with a custom label. You can choose the position and the pages they appear on.
 
 ## v0.4.4
 
-- রুমভিত্তিক PDF প্রতি রানে বাংলাদেশ সময়ের তারিখ ও সময়সহ নতুন `YYYY-MM-DD-HHMMSS_CENTER_WISE_GENERATED_FILES` ফোল্ডারে সেভ হয়।
+- Each run saves the room PDFs to a new `YYYY-MM-DD-HHMMSS_CENTER_WISE_GENERATED_FILES` folder. The name uses the date and time in Bangladesh.
 
 ## v0.4.3
 
-- কভার ও এন্ড পেজের শিরোনাম এবং টেবিলের বাঁ কলামে হালকা ধূসর শেডিং।
-- দুই পেজের শিরোনাম, টেবিলের ফিল্ড ও মান বড় হাতের অক্ষরে ছাপার আলাদা অপশন।
-- ফুটারে `Generated on:` প্রিফিক্স ও নতুন ডিফল্ট End Note।
+- The cover and end pages use light gray shading for their headings and the left column of each table.
+- Each page has its own option to print the heading, table labels, and values in uppercase.
+- The footer timestamp starts with `Generated on:`. The end page also has a new default note.
 
 ## v0.4.2
 
-- Room Print Packs-এর কভার ও এন্ড পেজে সাদা-কালো হেডিং এবং বর্ডারসহ টেবিল।
-- দুই পেজের ফুটারে সেন্টার করা টাইমস্ট্যাম্প ও সফটওয়্যার ক্রেডিট। ফুটারের ফন্ট সাইজ এবং অপাসিটি কনফিগার করা যায়।
-- কনসোলে প্রতি রুমের জন্য একবার ফল দেখায়। শেষে মোট সময় দেখা যায়।
-- সোর্স ZIP-এ স্থায়ী README, আলাদা নির্দেশিকা ও রিলিজ ইতিহাস।
+- Room Print Packs uses black-and-white headings and table borders on the cover and end pages.
+- Both pages can show a centered timestamp and software credit. You can change the footer font size and opacity.
+- The console reports one result per room and shows the total time at the end.
+- The source ZIP includes a README, separate guides, and a release history.
 
 ## v0.4.1
 
-- খোলা পরীক্ষা থেকে সেট PDF স্বয়ংক্রিয়ভাবে বাছাই এবং Room Print Packs-এর সর্বশেষ কনফিগারেশন সংরক্ষণ।
-- কভার ও এন্ড পেজের জন্য পৃথক ট্যাব, সাজানো টেবিল ও কভারের ফুটার।
-- ইনপুটের প্যাডিং, চেকবক্স, স্ক্রল আচরণ এবং কনসোল উন্নত করা হয়।
+- Room Print Packs can pick up available set PDFs from the open exam and remember your last settings.
+- The cover and end pages have separate tabs. The tables are easier to read, and the cover has a footer.
+- Improved input spacing, checkboxes, scrolling, and the console.
 
 ## v0.4.0
 
-- **Room Print Packs** যোগ হয়। Excel-এর রুম তালিকা ও সেট PDF থেকে সেন্টার ও রুমভিত্তিক প্রিন্ট ফাইল তৈরি করে।
-- ঐচ্ছিক কভার ও এন্ড পেজ, ডুপ্লেক্সের ফাঁকা পৃষ্ঠা, লাইভ কনসোল ও পুনরায় PDF তৈরি করার ব্যবস্থা যোগ হয়।
-- সফল PDF-এর জন্য Excel-এ `Done` লেখা হয়। ফর্মুলা ও সেভ করা ফল সংরক্ষিত থাকে।
+- Added Room Print Packs. It makes print files for each center and room using an Excel room list and the question-set PDFs.
+- You can add cover and end pages, insert blank pages for double-sided printing, follow progress in the console, and regenerate PDFs.
+- The app writes `Done` to Excel for each PDF it saves. It keeps formulas and their saved results.
 
 ## v0.3.6
 
-- ইনস্টল করা ফন্টের নাম সরাসরি বাছাই করতে নতুন **Choose Font** পিকার।
-- রানার ও টেমপ্লেট/QR-এ সেট নম্বরের জন্য আলাদা বাংলা বা ইংরেজি অঙ্কের সেটিং।
+- Added **Choose Font** so you can pick a font installed on your computer.
+- You can choose Bangla or English digits for set numbers separately in the runner and in templates and QR codes.
 
 ## v0.3.5
 
-- ঘোরানো সেট নম্বর ও কোড নামের জন্য আলাদা প্যারাগ্রাফ ও সেল অ্যালাইনমেন্ট।
-- Generated Text, Runner ও Footer Text-এর ফন্ট নির্বাচন ও সংরক্ষণ উন্নত করা হয়।
+- Rotated set numbers and code names have separate paragraph and table-cell alignment settings.
+- Improved how the app picks and saves fonts for Generated Text, Runner, and Footer Text.
 
 ## v0.3.4
 
-- QR-এ ঋণাত্মক ইনসেট ও গ্যাপ, সেট নম্বর ও কোড নামের ঘূর্ণন।
-- Common Settings-এর বাটন দুই সারিতে, ফন্ট সাইজের ধাপ ০.৫ pt এবং পরীক্ষার বছরভিত্তিক ফোল্ডার ব্যবহার উন্নত করা হয়।
+- QR insets and gaps accept negative values. You can rotate the set number and code name.
+- Common Settings buttons fit into two rows, font sizes change in 0.5 pt steps, and exam folders are organized by year.
 
 ## v0.3.3
 
-- QR অবস্থান নিয়ন্ত্রণ, রানার ও ফুটার টেক্সট সেটিংস, ডিফল্ট টেমপ্লেট এবং পরীক্ষার তথ্য প্রদর্শন উন্নত করা হয়।
+- Improved QR placement, runner and footer text settings, default templates, and the way the app shows exam details.
 
 ## v0.3.2
 
-- QR অ্যালাইনমেন্ট, পোস্ট গ্রেডের প্রদর্শন এবং আগের পরীক্ষা পুনরায় খুললে জেনারেশন স্ট্যাটাস পুনরুদ্ধার উন্নত করা হয়।
+- Improved QR alignment, how post grades appear, and how generation status is restored when you reopen an exam.
